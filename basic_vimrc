@@ -1,0 +1,37 @@
+" This is my customised .vimrc file for python.
+" A good writeup of the .vimrc is here:
+" http://dougblack.io/words/a-good-vimrc.html
+syntax on
+colorscheme koehler
+"colorscheme desert
+" Tab Handling
+set tabstop=4
+" set relativenumber, 
+" set spell
+set softtabstop=4
+set expandtab
+set wildmenu
+set shiftwidth=4
+set backspace=2  "compatible with version 5.4 and earlier
+set ruler
+filetype indent on 
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+" Enable folding with the spacebar
+nnoremap <space> za
+" Show line numbers
+set number
+" Show command in bottom bar
+set showcmd
+" Highlight the current line
+set cursorline
+" Load filetype specific indentation rules
+" ~/.vim/indent/python.vim would load for *.py
+" filetype indent on
+" Visual autocomplete for command menu
+" Redraw only when necessary, speeds up macros
+set lazyredraw
+" the line bellow will include dictioanry word when we Ctr+n Ctr+p, make sure spell is on
+set complete+=kspell 
+
